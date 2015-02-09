@@ -11,6 +11,4 @@ data$month <- month(data$date)
 #Drop 2011 data (potentially incomplete)
 data<-data[!(data$year==2011),]
 
-#Get count of inspections by month
-df_countsbymonth <- aggregate(CAMIS ~ year + month, data = data, FUN = length)
 
